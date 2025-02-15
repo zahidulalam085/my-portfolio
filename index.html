@@ -64,9 +64,9 @@
     <script>
         function showSection(sectionId) {
             document.querySelectorAll('section').forEach(section => {
-                section.classList.remove('active');
+                section.style.display = 'none'; // Hide all sections
             });
-            document.getElementById(sectionId).classList.add('active');
+            document.getElementById(sectionId).style.display = 'block'; // Show the selected section
         }
     </script>
 </head>
@@ -130,3 +130,4 @@
     </footer>
 </body>
 </html>
+
