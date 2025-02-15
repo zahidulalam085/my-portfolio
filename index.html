@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -69,6 +68,10 @@
             });
             document.getElementById(sectionId).style.display = 'block'; // Show the selected section
         }
+        // Show "About Me" section by default on page load
+        window.onload = function() {
+            showSection('about');
+        };
     </script>
 </head>
 <body>
@@ -86,14 +89,14 @@
         <a onclick="showSection('experience')">Job Experience</a>
     </nav>
     
-    <section id="about" class="active">
+    <section id="about">
         <h2>About Me</h2>
         <img src="profile1.jpg" alt="Md. Zahidul Alam" class="profile-img">
         <img src="profile2.jpg" alt="Md. Zahidul Alam" class="profile-img">
         <p>I am a dedicated Civil Engineer specializing in humanitarian engineering and research. Passionate about water and sanitation issues, disaster risk reduction, and sustainable infrastructure development, I strive to contribute meaningfully to society through innovation and problem-solving. With a strong academic background and hands-on project experience, I continuously seek opportunities to learn, grow, and make a lasting impact.</p>
     </section>
     
-    <section id="experience" class="active">
+    <section id="experience">
         <h2>Job Experience</h2>
         <p><strong>Executive (Customer Relationship)</strong> - VolumeZero (Feb 2025 - Present)</p>
         <p><strong>Data Analyst (Data Collection & Data Entry)</strong> - Paradine (UK-based data analysis company, Remote Work)</p>
